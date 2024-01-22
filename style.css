@@ -1,0 +1,110 @@
+body {
+    border: 1px solid #ccc;
+    background-color: #f7f4f4;
+}
+form {
+    border: 2px solid #fd9f9f;
+    padding: 20px;
+    font-family: "DnDish Font", Arial, sans-serif; /* Replace "DnDish Font" with the desired font name */
+}
+
+form {
+    border: 2px solid #fd9f9f;
+    padding: 20px;
+}
+ol {
+    counter-reset: my-counter;
+    padding-left: 20px;
+}
+
+ol li {
+    counter-increment: my-counter;
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+ol li:before {
+    content: counter(my-counter) ".";
+    color: #ffcc00;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+form h1 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #ffcc00;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 35px;
+}
+
+ul li:before {
+    content: "\2022";
+    color: #ffcc00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+h1 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #ffcc00;
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for mobile devices */
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Styles for desktops */
+    h1 {
+        font-size: 36px;
+    }
+}
+
+div {
+    margin: 20px;
+}
+
